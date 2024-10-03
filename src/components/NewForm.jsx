@@ -19,6 +19,10 @@ export default function NewForm(){
     }
 
     function handleCreateForm(){
+        if(formData.fieldTypeId == ""){ 
+            alert("select a Field type")
+            return;
+        }
         const existingForms = JSON.parse(localStorage.getItem('forms')) || [];
         existingForms.push(formData);
         localStorage.setItem('forms', JSON.stringify(existingForms));
