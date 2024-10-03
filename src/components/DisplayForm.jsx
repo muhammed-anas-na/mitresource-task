@@ -13,7 +13,7 @@ export default function DisplayForm() {
             {
                 forms?.map((val) => {
                     return (
-                        <form className="bg-red-600 p-5 flex flex-col max-w-40 min-w-40">
+                        <form className="bg-gray-500 border-2 shadow-lg p-5 flex flex-col max-w-40 min-w-96 my-10">
                             <h1 className="text-xl font-bold">Your form</h1>
                             <label>{val?.fieldText}</label>
                             {
@@ -96,6 +96,8 @@ export default function DisplayForm() {
                                     <></>
                                 )
                             }
+
+                            <button className="bg-slate-200 my-5" onClick={()=>{alert("Form submitted")}}>Submit</button>
                         </form>
                     )
                 })
