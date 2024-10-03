@@ -44,7 +44,7 @@ export default function Validator(){
     }
 
     return (
-        <div className="bg-slate-300 absolute right-0 h-screen p-5 w-[30%] flex flex-col justify-start">
+        <div className="bg-slate-300 absolute right-0 top-0 h-screen p-5 w-[30%] flex flex-col justify-start">
             <h1 className="text-xl font-bold">Form Validator</h1>
 
             <label htmlFor="name">Name</label>

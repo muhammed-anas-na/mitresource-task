@@ -29,7 +29,7 @@ export default function NewForm(){
         location.reload();
     }
     return(
-        <div className="bg-slate-300 absolute right-0 h-screen p-5 w-[30%] flex flex-col justify-start">
+        <div className="bg-slate-300 absolute right-0 top-0 h-screen p-5 w-[30%] flex flex-col justify-start">
             <h1>Create new form</h1>
             
             <label htmlFor="">Name</label>
